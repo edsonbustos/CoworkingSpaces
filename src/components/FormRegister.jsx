@@ -50,7 +50,7 @@ return (
       <label htmlFor="emailUsuario">Email</label>
       <input id="emailUsuario" name="emailUsuario" value={emailUsuario} onChange={EmailUsuario} type="email"/><br /><br />
       <button onClick={registrar}>Registrar</button><br /><br />
-      <Link to="/Inicio" id="cerrar">Regresar al Login</Link>
+      <Link to="/" id="cerrar">Regresar a pagina de inicio</Link>
     </div>
   );
 }

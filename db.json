@@ -1,8 +1,14 @@
 {
   "users": [
     {
-      "id": "bed5",
-      "nombreUsuario": "e",
+      "id": "c4a3",
+      "nombreUsuario": "1",
+      "passwordUsuario": "1",
+      "emailUsuario": "1"
+    },
+    {
+      "id": "196e",
+      "nombreUsuario": "1",
       "passwordUsuario": "1",
       "emailUsuario": "1"
     }
