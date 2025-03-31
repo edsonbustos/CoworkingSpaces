@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import llamados from "./services/llamados";
 import Swal from "sweetalert2";
+import "../styles/Register.css";
+
 
 function FormRegister() {
   const [nombreUsuario, setNombreUsuario] = useState("");
@@ -36,13 +38,13 @@ function FormRegister() {
       return;
     } Swal.fire("Usuario registrado correctamente!");
 
-    llamados.postUsers(nombreUsuario, passwordUsuario, emailUsuario);  
+    llamados.postUsers(nombreUsuario, passwordUsuario, emailUsuario,"estudiante");  
 
     navigate("/");
   };
 return (
-    <div>
-      <header id="header">Register page</header><br /><br />
+    <div id="Registerpage">
+      <header id="Register" >Register page</header><br /><br />
       <label htmlFor="nombreUsuario">Usuario</label>
       <input id="nombreUsuario" name="nombreUsuario" value={nombreUsuario} onChange={NombreUsuario} type="text"/><br /><br />
       <label htmlFor="passwordUsuario">Contraseña</label>

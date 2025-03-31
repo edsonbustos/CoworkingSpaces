@@ -1,91 +1,59 @@
 import React from "react";
 import "../styles/Inicio.css";
-import { Link, } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "boxicons";
+import Carusel from "./Carusel";
+import Header from "./Header";
+import LugaresDestacados from "./LugaresDestacados";
+
 
 function FormInicio() {
-  
-
- 
   return (
     <div>
-      <header>
-        <nav>
-    
+      <header><Header/></header>
+     
+      <section className="seccion"><Carusel/></section>
 
+      <section className="secciondescatados"><LugaresDestacados/> </section>
 
-          <div class="logo"></div>
-          <ul class="nav-links">
-            <li>
-              <a href="#">Buscar</a>
-            </li>
-            <li>
-              <a href="#">Anunciar</a>
-            </li>
-            <li>
-              <a href="#">Ayuda</a>
-            </li>
-            <div class="dropdown">
-  <button class="dropbtn"><box-icon type='solid' name='home-alt-2'></box-icon></button>
-  <div class="dropdown-content">
-    <a href="/Register">Registrarse</a>
-    <a href="/Login">Iniciar Secion</a>
-    <a href="#">Activa tu espacio</a>
-    <a href="#">Ayuda</a>
-  </div>
-</div>
-          </ul>
-        </nav>
-      </header>
- 
+      <footer>
+        <div className="footer-container">
+          <div className="footer-links">
+            <p id="copy">&copy; 2025 CoworkingSpaces.</p>
+            <p>
+              <Link to="/privacy">Privacidad</Link> |{" "}
+              <Link to="/terms">Términos</Link> |{" "}
+              <Link to="/site-map">Mapa del sitio</Link>
+            </p>
+          </div>
 
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Encuentra un lugar único para trabajr</h1>
-          <form class="search-form">
-            <input type="text" placeholder="¿A dónde vas?" />
-            <button type="submit">Buscar</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="properties">
-        <h2>Lugares destacadas</h2>
-        <div class="property-list">
-          <div class="property-card">
-            <p class="property-name">Cafeterías y restaurantes con wifi</p>
-            <p class="precio">Ver Disponibles</p>
-          </div>
-          <div class="property-card">
-            <p class="property-name">Bibliotecas</p>
-            <p class="precio">Ver Disponibles</p>
-          </div>
-          <div class="property-card">
-            <p class="property-name">Parques y zonas al aire libre</p>
-            <p class="precio">Ver Disponibles</p>
-          </div>
-          <div class="property-card">
-            <p class="property-name">Hoteles y hostales</p>
-            <p class="precio">Ver Disponibles</p>
-          </div>
-          <div class="property-card">
-            <p class="property-name">Centros de negocios</p>
-            <p class="precio">Ver Disponibles</p>
-          </div>
-          <div class="property-card">
-            <p class="property-name">Centros culturales o museos</p>
-            <p class="precio">Ver Disponibles</p>
-          </div>
-          <div class="property-card">
-            <p class="property-name">Centros de negocios</p>
-            <p class="precio">Ver Disponibles</p>
-          </div>
-          <div class="property-card">
-            <p class="property-name">Espacios compartidos</p>
-            <p class="precio">Ver Disponibles</p>
+          <div className="footer-social">
+            <p>Síguenos:</p>
+            <a
+              target="_blank"
+              href="https://www.instagram.com"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                type="logo"
+                name="instagram-alt"
+                aria-label="Instagram Icon"
+              ></box-icon>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                type="logo"
+                name="facebook-circle"
+                aria-label="Facebook Icon"
+              ></box-icon>
+            </a>
           </div>
         </div>
-      </section>
+      </footer>
     </div>
   );
 }

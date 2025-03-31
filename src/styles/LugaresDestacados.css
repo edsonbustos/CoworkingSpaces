@@ -1,0 +1,32 @@
+.property-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  .precio:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .nombre-Propiedad {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #9f484b;
+  }
+  .precio {
+    color: #ff5a5f;
+    font-weight: bold;
+    text-decoration: white;
+    color:black;
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+.Destacadas{
+    width: 105%;
+    height: 130px;
+}
+  
+

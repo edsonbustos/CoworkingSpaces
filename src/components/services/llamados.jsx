@@ -1,6 +1,6 @@
 async function getUsers() {
     try {
-        const response = await fetch('http://localhost:3000/users', {
+        const response = await fetch('http://localhost:3001/users', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -23,19 +23,20 @@ async function getUsers() {
 
 //////////LLAMADO POST//////////
 
-async function postUsers(nombreUsuario,passwordUsuario,emailUsuario) {
+async function postUsers(nombreUsuario,passwordUsuario,emailUsuario,tipo) {
     try {
      
         const userData = { 
             nombreUsuario,
             passwordUsuario,
-            emailUsuario
+            emailUsuario,
+            tipo
         
         };
 
 
 
-        const response = await fetch("http://localhost:3000/users", {
+        const response = await fetch("http://localhost:3001/users", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -73,7 +74,7 @@ async function updateUsers(nombre,apellido,edad,id)
         
 
 
-        const response = await fetch("http://localhost:3000/users/"+id, {
+        const response = await fetch("http://localhost:3001/users/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -98,7 +99,7 @@ async function updateUsers(nombre,apellido,edad,id)
 
 async function deleteUser(id) {
     try {
-        const response = await fetch(`http://localhost:3000/users/${id}`, {
+        const response = await fetch(`http://localhost:3001/users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

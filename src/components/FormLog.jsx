@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import llamados from "./services/llamados";
 import Swal from "sweetalert2";
+import "../styles/Login.css";
 
 
 function FormLog() {
@@ -37,6 +38,7 @@ function FormLog() {
 
     const encontrado = usuarios.find((usuario) => usuario.nombreUsuario === nombreUsuario && usuario.passwordUsuario === passwordUsuario && usuario.emailUsuario === emailUsuario);
 
+    
       if (!encontrado) {
       Swal.fire("Usuario incorrecto");
     } else {
@@ -44,8 +46,8 @@ function FormLog() {
     }
 }
 return (
-    <div>
-       <header id="header">Log in page</header><br /><br />
+    <div id="Loginpage">
+       <header id="Login" >Log in page</header><br /><br />
       <label htmlFor="">Usuario</label>
       <input value={nombreUsuario} onChange={usuario} type="text" /> <br /> <br />
       <label htmlFor="">Contraseña</label>
