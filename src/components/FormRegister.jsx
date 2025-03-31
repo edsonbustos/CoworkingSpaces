@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import llamados from "./services/llamados";
 import Swal from "sweetalert2";
 import "../styles/Register.css";
+import Header from "./Header";
 
 
 function FormRegister() {
@@ -40,9 +41,11 @@ function FormRegister() {
 
     llamados.postUsers(nombreUsuario, passwordUsuario, emailUsuario,"estudiante");  
 
-    navigate("/");
+    navigate("/login");
   };
 return (
+  <div>
+  <Header />
     <div id="Registerpage">
       <header id="Register" >Register page</header><br /><br />
       <label htmlFor="nombreUsuario">Usuario</label>
@@ -53,6 +56,45 @@ return (
       <input id="emailUsuario" name="emailUsuario" value={emailUsuario} onChange={EmailUsuario} type="email"/><br /><br />
       <button onClick={registrar}>Registrar</button><br /><br />
       <Link to="/" id="cerrar">Regresar a pagina de inicio</Link>
+    </div>
+     <footer>
+        <div className="footer-container">
+          <div className="footer-links">
+            <p id="copy">&copy; 2025 CoworkingSpaces.</p>
+            <p>
+              <Link to="">Privacidad</Link> |{" "}
+              <Link to="">Términos</Link> |{" "}
+              <Link to="">Mapa del sitio</Link>
+            </p>
+          </div>
+
+          <div className="footer-social">
+            <p>Síguenos:</p>
+            <a
+              target="_blank"
+              href="https://www.instagram.com"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                type="logo"
+                name="instagram-alt"
+                aria-label="Instagram Icon"
+              ></box-icon>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                type="logo"
+                name="facebook-circle"
+                aria-label="Facebook Icon"
+              ></box-icon>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

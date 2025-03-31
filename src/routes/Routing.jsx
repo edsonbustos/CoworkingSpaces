@@ -18,7 +18,8 @@ import Parques from "../pages/Parques";
 import CentrosComunitarios from "../pages/CentrosComunitarios";
 import FormCards from "../components/FormCards";
 import Cards from "../pages/Cards";
-import T from "../pages/T";
+
+import PrivateRoute from "../components/PrivateRoute";
 
 function Routing() {
   return (
@@ -41,7 +42,7 @@ function Routing() {
           <Route path="/Parques" element={<Parques/>} />
           <Route path="/CentrosComunitarios" element={<CentrosComunitarios/>} />
           <Route path="/Cards" element={<Cards/>} />
-          <Route path="/T" element={<T/>} />
+          <Route path="/ActivarEspacio" element={<PrivateRoute element={<ActivarEspacio />} />} />
           
           
 

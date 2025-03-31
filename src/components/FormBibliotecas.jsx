@@ -10,6 +10,20 @@ import "boxicons";
 import "../styles/Cards.css";
 import Swal from "sweetalert2";
 import BibliotecaCard1 from "../img/Biblioteca/descarga.jpg";
+import BibliotecaCard2 from "../img/Biblioteca/descarga1.jpg";
+import BibliotecaCard3 from "../img/Biblioteca/descarga2.jpg";
+import BibliotecaCard4 from "../img/Biblioteca/descarga3.jpg";
+import BibliotecaCard5 from "../img/Biblioteca/descarga4.jpg";
+import BibliotecaCard6 from "../img/Biblioteca/descarga5.jpg";
+import BibliotecaCard7 from "../img/Biblioteca/descarga6.jpg";
+import BibliotecaCard8 from "../img/Biblioteca/descarga7.jpg";
+import BibliotecaCard9 from "../img/Biblioteca/descarga8.jpg";
+import BibliotecaCard10 from "../img/Biblioteca/descarga9.jpg";
+import BibliotecaCard11 from "../img/Biblioteca/descarga10.jpg";
+import BibliotecaCard12 from "../img/Biblioteca/descarga11.jpg";
+import BibliotecaCard13 from "../img/Biblioteca/descarga12.jpg";
+import BibliotecaCard14 from "../img/Biblioteca/descarga13.jpg";
+import BibliotecaCard15 from "../img/Biblioteca/descarga14.jpg";
 
 function FormBibliotecas() {
   return (
@@ -32,14 +46,13 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard1} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       {/* Repeat the above Card component for the other cards */}
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard2} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -53,13 +66,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard2} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard3} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -73,13 +85,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard3} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard4} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -93,13 +104,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard4} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard5} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -113,13 +123,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard5} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard6} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -133,13 +142,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard6} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard7} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -153,13 +161,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard7} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard8} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -173,13 +180,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard8} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard9} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -193,13 +199,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard9} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard10} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -213,13 +218,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard10} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard11} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -233,13 +237,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard11} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard12} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -253,13 +256,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard12} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard13} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -273,13 +275,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard13} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard14} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -293,13 +294,12 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard14} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
 
       <Card className="card">
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={BibliotecaCard15} />
         <Card.Body>
           <Card.Title className="card-title">Card Title</Card.Title>
           <Card.Text className="card-text">
@@ -313,8 +313,7 @@ function FormBibliotecas() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#" className="card-link">Card Link</Card.Link>
-          <Card.Link href="#" className="card-link">Another Link</Card.Link>
+        <Card.Link href="#" onClick={BibliotecaCard15} className="card-link">Mas informacion</Card.Link>
         </Card.Body>
       </Card>
     </div>

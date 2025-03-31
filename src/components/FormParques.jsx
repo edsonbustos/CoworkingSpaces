@@ -3,6 +3,8 @@ import Header from "./Header";
 import "../styles/Inicio.css";
 import { Link } from "react-router-dom";
 import "boxicons";
+import FormCards from './FormCards';
+
 
 function FormParques() {
   return (
@@ -10,7 +12,6 @@ function FormParques() {
 
   
 <div><FormCards/></div>
-
      
      
     <footer>

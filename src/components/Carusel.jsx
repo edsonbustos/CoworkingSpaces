@@ -2,7 +2,6 @@ import React from "react";
 import { Carousel, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import img from "../img/Carousel/image1.webp";
-import img2 from "../img/Carousel/image2.jpg";
 import img1 from "../img/Carousel/image.jpg";
 import "../styles/Carousel.css";
 import Info from "./Info";
@@ -23,12 +22,7 @@ function Carusel() {
           <Info />
       </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
-          <Image src={img2} className="img3" />
-          <Carousel.Caption className="Options">
-            <Info />
-          </Carousel.Caption>
-        </Carousel.Item>
+        
       </Carousel>
       
       

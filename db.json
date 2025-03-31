@@ -1,24 +1,12 @@
 {
   "users": [
     {
-      "id": "911b",
+      "id": "6d6e",
       "nombreUsuario": "1",
       "passwordUsuario": "1",
       "emailUsuario": "1",
-      "tipo": "admin"
-    },
-    {
-      "id": "5431",
-      "nombreUsuario": "2",
-      "passwordUsuario": "2",
-      "emailUsuario": "2",
       "tipo": "estudiante"
     }
   ],
-  "tareas": [
-    {
-      "id": "e8bc",
-      "text": "SDFF"
-    }
-  ]
+  "tareas": []
 }

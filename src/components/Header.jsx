@@ -21,11 +21,11 @@ function Header() {
     
       <div className="logo"></div>
       <ul className="nav-links">
+     <li>
+          <Link to="/Buscar"></Link>
+          </li> 
         <li>
-          <Link to="/Buscar">Buscar</Link>
-        </li>
-        <li>
-          <Link to="/ActivarEspacio">Activa tu espacio coworking</Link>
+          <Link to="/Login">Activa tu espacio coworking</Link>
         </li>
       </ul>
     
@@ -44,11 +44,11 @@ function Header() {
           <Link className="dropdowns" to="/Login">
             Iniciar Seción
           </Link>
-          <Link className="dropdowns" to="/ActivarEspacio">
+          <Link className="dropdowns" to="/Login">
             Activa tu espacio coworking
           </Link>
           <Link className="dropdowns" to="/Ayuda">
-            Ayuda
+          Acerca de Nosotros
           </Link>
         </div>
       </div>

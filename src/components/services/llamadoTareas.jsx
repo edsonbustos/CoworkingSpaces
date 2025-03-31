@@ -57,12 +57,26 @@ async function postTareas(text) {
 //////////////LLAMADO UPDATE/////////////
 
 
-async function updateTareas(text,id) 
+async function updateTareas(nombreLocal,descripcion,provincia,canton,
+    horarios,
+    correoElectronico,
+    cedula,
+    nombreCompleto,
+    telefono,text,id) 
 {
     try {
      
         const userData = { 
-            text
+          nombreLocal,
+          descripcion,
+          provincia,
+          canton,
+          horarios,
+          correoElectronico,
+          cedula,
+          nombreCompleto,
+          telefono,
+          text
         
         };
 
